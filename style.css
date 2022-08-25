@@ -45,6 +45,16 @@ main {
   font-size: 2rem;
 }
 
+.github {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+}
+p1 {
+  font-size: 3rem;
+}
 /* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
@@ -116,8 +126,4 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
-}
-
-p1 {
-  font-size: 2rem;
 }
