@@ -17,7 +17,7 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   document.querySelector('.score').textContent = 20;
   mesajFonk('Start guessing...');
-  document.querySelector('#kutu').textContent = '?';
+  document.querySelector('#box').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.guess').value = '';
 });
@@ -29,7 +29,7 @@ document.querySelector('.check').addEventListener('click', function () {
     if (tahmin <= 20 && tahmin >= 0) {
       if (tahmin == deger) {
         mesajFonk('Congratulations!');
-        document.querySelector('#kutu').textContent = deger;
+        document.querySelector('#box').textContent = deger;
         document.querySelector('body').style.backgroundColor = '#60b347';
         if (score > yuksekskor) {
           yuksekskor = score;
@@ -50,6 +50,6 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 
   if (!tahmin) {
-    mesajFonk('Bir sayı yaz...');
+    mesajFonk('Enter a number...');
   }
 });
