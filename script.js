@@ -3,7 +3,7 @@
 const randomNumbers = function (start, end) {
   return Math.floor(Math.random() * end) + start;
 };
-const deger = randomNumbers(1, 20);
+let deger = randomNumbers(1, 20);
 console.log(deger);
 let score = document.querySelector('.score').textContent;
 let yuksekskor = 0;
@@ -12,7 +12,7 @@ const mesajFonk = function (message) {
   document.querySelector('.message').textContent = message;
 };
 document.querySelector('.again').addEventListener('click', function () {
-  deger = Math.floor(Math.random() * 21);
+  deger = randomNumbers(1, 20);
   console.log(deger);
   score = 20;
   document.querySelector('.score').textContent = 20;
